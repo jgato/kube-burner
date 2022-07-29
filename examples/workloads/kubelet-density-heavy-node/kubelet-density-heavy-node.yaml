@@ -13,12 +13,12 @@
 #      esIndex: kube-burner
 #
 jobs:
-  - name: kubelet-density-heavy
+  - name: kubelet-density-heavy-node
     jobIterations: 170
-    qps: 50 
+    qps: 50
     burst: 100
     namespacedIterations: false
-    namespace: kubelet-density-heavy
+    namespace: kubelet-density-heavy-node
     waitWhenFinished: true
     podWait: false
     objects:
